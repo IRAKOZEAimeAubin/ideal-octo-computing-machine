@@ -19,4 +19,16 @@ class Ninja {
     }
 }
 
+interface CursedEnergy {
+    level: string
+    isPresent (): boolean
+}
+
+class Sorcerer implements CursedEnergy{
+    constructor( public level: string ) { }
+    isPresent(): boolean {
+        return true
+    }
+}
+
 const jd = new User( "jd@jd.com", "john doe" );
